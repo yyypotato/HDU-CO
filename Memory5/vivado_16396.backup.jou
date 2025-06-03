@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu May 29 10:05:55 2025
+# Process ID: 16396
+# Current directory: D:/desk/5/Memory5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11452 D:\desk\5\Memory5\Memory.xpr
+# Log file: D:/desk/5/Memory5/vivado.log
+# Journal file: D:/desk/5/Memory5\vivado.jou
+# Running On: DESKTOP-1C6V4N9, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 16361 MB
+#-----------------------------------------------------------
+start_gui
+open_project -read_only D:/desk/5/Memory5/Memory.xpr
+update_compile_order -fileset sources_1

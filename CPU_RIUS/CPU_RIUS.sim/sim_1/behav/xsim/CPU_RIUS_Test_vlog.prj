@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CPU_RIUS.gen/sources_1/ip/IM/sim/IM.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/ALU_RegisterFile.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/CPU_RIUS.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/CU.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/DM.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/Fetch_Code.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/ID1.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/ID2.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/IF.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/MDR.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/SMG.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/delay_5ms.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/registerfile.v" \
+"../../../../CPU_RIUS.srcs/sources_1/new/shumaguan.v" \
+"../../../../CPU_RIUS.srcs/sim_1/new/CPU_RIUS_Test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

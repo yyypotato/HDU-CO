@@ -1,0 +1,7 @@
+Running: xsim.dir/CPU_RIUCode_behav/xsimk.exe -simmode gui -wdb CPU_RIUCode_behav.wdb -simrunnum 0 -socket 62539
+Design successfully loaded
+Design Loading Memory Usage: 10488 KB (Peak: 10488 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 12644 KB (Peak: 12644 KB)
+Simulation CPU Usage: 203 ms

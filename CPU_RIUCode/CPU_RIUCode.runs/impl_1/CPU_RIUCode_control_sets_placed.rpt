@@ -1,0 +1,118 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat May 24 14:39:30 2025
+| Host         : DESKTOP-1C6V4N9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_RIUCode_control_sets_placed.rpt
+| Design       : CPU_RIUCode
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    36 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             107 |           48 |
+| No           | No                    | Yes                    |               3 |            2 |
+| No           | Yes                   | No                     |              16 |            4 |
+| Yes          | No                    | No                     |              34 |           10 |
+| Yes          | No                    | Yes                    |            1060 |          446 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-------------------------+------------------+------------------+----------------+--------------+
+|     Clock Signal     |      Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+-------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG       |                         | uu3/rst_n        |                2 |              3 |         1.50 |
+|  clk_25M_IBUF_BUFG   |                         |                  |                1 |              3 |         3.00 |
+|  uu2/uu1/IR_reg[0]_0 |                         |                  |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | uu4/PC_Write_i_1_n_0    | uu3/rst_n        |                3 |              7 |         2.33 |
+|  clk_25M_IBUF_BUFG   |                         | uu1/uu1/clear    |                4 |             16 |         4.00 |
+| ~clk_IBUF_BUFG       | uu4/IR_Write            | uu3/rst_n        |                8 |             30 |         3.75 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[7]_3     | uu3/rst_n        |                9 |             31 |         3.44 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[11]_6[0] | uu3/rst_n        |               16 |             32 |         2.00 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[11]_2[0] | uu3/rst_n        |               17 |             32 |         1.88 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[11]_5[0] | uu3/rst_n        |               15 |             32 |         2.13 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[10]_1[0] | uu3/rst_n        |               14 |             32 |         2.29 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[10]_0[0] | uu3/rst_n        |               17 |             32 |         1.88 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[10]_4[0] | uu3/rst_n        |               17 |             32 |         1.88 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[10]_3[0] | uu3/rst_n        |               11 |             32 |         2.91 |
+| ~clk_IBUF_BUFG       | uu2/uu1/E[0]            | uu3/rst_n        |               16 |             32 |         2.00 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[11]_1[0] | uu3/rst_n        |               10 |             32 |         3.20 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[11]_3[0] | uu3/rst_n        |               15 |             32 |         2.13 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[11]_4[0] | uu3/rst_n        |               11 |             32 |         2.91 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[11]_0[0] | uu3/rst_n        |                9 |             32 |         3.56 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[7]_1[0]  | uu3/rst_n        |               19 |             32 |         1.68 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[7]_4[0]  | uu3/rst_n        |               12 |             32 |         2.67 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[7]_6[0]  | uu3/rst_n        |                7 |             32 |         4.57 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[7]_0[0]  | uu3/rst_n        |               11 |             32 |         2.91 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[8]_2[0]  | uu3/rst_n        |               12 |             32 |         2.67 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[8]_3[0]  | uu3/rst_n        |               17 |             32 |         1.88 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[7]_5[0]  | uu3/rst_n        |               15 |             32 |         2.13 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_1[0]  | uu3/rst_n        |               14 |             32 |         2.29 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_2[0]  | uu3/rst_n        |               18 |             32 |         1.78 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_4[0]  | uu3/rst_n        |               12 |             32 |         2.67 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_5[0]  | uu3/rst_n        |               14 |             32 |         2.29 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_6[0]  | uu3/rst_n        |               12 |             32 |         2.67 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_7[0]  | uu3/rst_n        |               14 |             32 |         2.29 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_0[0]  | uu3/rst_n        |               16 |             32 |         2.00 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_8[0]  | uu3/rst_n        |               13 |             32 |         2.46 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_10[0] | uu3/rst_n        |               11 |             32 |         2.91 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[9]_9[0]  | uu3/rst_n        |               13 |             32 |         2.46 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[8]_1[0]  | uu3/rst_n        |               10 |             32 |         3.20 |
+| ~clk_IBUF_BUFG       | uu2/uu1/IR_reg[7]_2[0]  | uu3/rst_n        |               18 |             32 |         1.78 |
+| ~clk_IBUF_BUFG       | uu4/IR_Write            |                  |               10 |             34 |         3.40 |
+| ~clk_IBUF_BUFG       |                         |                  |               46 |            100 |         2.17 |
++----------------------+-------------------------+------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1748429028">
+  <File Type="ROUTE-PWR" Name="CPU_RIUSJB_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="CPU_RIUSJB.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="CPU_RIUSJB_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="CPU_RIUSJB_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="CPU_RIUSJB.msk"/>
+  <File Type="ROUTE-CLK" Name="CPU_RIUSJB_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="CPU_RIUSJB.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CPU_RIUSJB_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="CPU_RIUSJB.bit"/>
+  <File Type="BG-DRC" Name="CPU_RIUSJB.drc"/>
+  <File Type="BG-BGN" Name="CPU_RIUSJB.bgn"/>
+  <File Type="BG-BIN" Name="CPU_RIUSJB.bin"/>
+  <File Type="BITSTR-RBT" Name="CPU_RIUSJB.rbt"/>
+  <File Type="BITSTR-NKY" Name="CPU_RIUSJB.nky"/>
+  <File Type="BITSTR-BMM" Name="CPU_RIUSJB_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="CPU_RIUSJB.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CPU_RIUSJB_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="CPU_RIUSJB.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CPU_RIUSJB_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="CPU_RIUSJB.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="CPU_RIUSJB_soc.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="CPU_RIUSJB.npi"/>
+  <File Type="OPT-DRC" Name="CPU_RIUSJB_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="CPU_RIUSJB.rbd"/>
+  <File Type="OPT-HWDEF" Name="CPU_RIUSJB.hwdef"/>
+  <File Type="PLACE-IO" Name="CPU_RIUSJB_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CPU_RIUSJB_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CPU_RIUSJB_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CPU_RIUSJB_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CPU_RIUSJB_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="CPU_RIUSJB_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CPU_RIUSJB_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CPU_RIUSJB_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CPU_RIUSJB_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CPU_RIUSJB_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="CPU_RIUSJB_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CPU_RIUSJB_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CPU_RIUSJB_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CPU_RIUSJB_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="CPU_RIUSJB_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CPU_RIUSJB_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CPU_RIUSJB_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CPU_RIUSJB_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="CPU_RIUSJB_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CPU_RIUSJB_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="CPU_RIUSJB_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="CPU_RIUSJB_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="CPU_RIUSJB_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CPU_RIUSJB_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="CPU_RIUSJB_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPU_RIUSJB_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CPU_RIUSJB_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CPU_RIUSJB_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CPU_RIUSJB_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CPU_RIUSJB_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CPU_RIUSJB_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CPU_RIUSJB_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="CPU_RIUSJB_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CPU_RIUSJB_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="CPU_RIUSJB.pdi"/>
+  <File Type="PL-PDI-FILE" Name="CPU_RIUSJB_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="CPU_RIUSJB.rcfi"/>
+  <File Type="CFI_FILE" Name="CPU_RIUSJB.cfi"/>
+  <File Type="RNPI_FILE" Name="CPU_RIUSJB.rnpi"/>
+  <File Type="ROUTE-RQS" Name="CPU_RIUSJB_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="CPU_RIUSJB_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU_RegisterFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Fetch_Code.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ID1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ID2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IF.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MDR.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SMG.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delay_5ms.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/registerfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shumaguan.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPU_RIUSJB.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/im.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CPU_RIUSJB"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/CPU_RIUSJB.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/CPU_RIUSJB.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/CPU_RIUSJB.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="IM"/>
+</GenRun>

@@ -1,0 +1,110 @@
+`timescale 1ns / 1ps
+module ALU_Test;
+//inputs
+reg  clk_A,clk_B,clk_F,rst_n;
+reg  [32:1] Data;
+//outputs
+wire [3:0] FR;
+wire [32:1] F=uut.F;
+wire [32:1] A=uut.A;
+wire [32:1] B=uut.B;
+ALU uut(
+   .clk_A(clk_A),
+   .clk_B(clk_B),
+   .clk_F(clk_F),
+   .rst_n(rst_n),
+   .Data(Data),
+   .FR(FR)
+);
+   initial begin
+        rst_n=0;
+        clk_A=0;
+        clk_B=0;
+        clk_F=0;
+        Data=32'h00000000;
+        #5
+        Data=32'h7FFFFFFF;
+        clk_A=1;
+        #5
+        clk_A=0;
+        Data=32'h80000003;
+        clk_B=1;
+        #5
+        Data=32'h00000000;
+        clk_B=0;
+        clk_F=1;
+        #5
+        clk_F=0;
+        #1
+        Data=32'h80000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h70000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h60000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h40000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h20000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h30000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        Data=32'h00000003;
+        clk_B=1;
+        #5
+        clk_B=0;
+        Data=32'h10000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'hD0000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h50000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h40000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        Data=32'h8FFFFFFF;
+        clk_A=1;
+        #5
+        clk_A=0;
+        Data=32'h10000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'hD0000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+        #1
+        Data=32'h50000000;
+        clk_F=1;
+        #1
+        clk_F=0;
+   end
+endmodule
