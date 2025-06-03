@@ -40,16 +40,16 @@ begin
     OF=0;
     CF=0;
 	case(ALU_OP)
-	   4'b0000: begin {CF,F}=Data_A+Data_B; end
-	   4'b0001: begin F=Data_A<<Data_B; end
-       4'b0010: begin F=($signed(Data_A) < $signed(Data_B))?1:0; end
-       4'b0011: begin F=Data_A<Data_B?1:0; end
-       4'b0100: begin F=Data_A^Data_B; end
-       4'b0101: begin F=Data_A>>Data_B; end
-       4'b0110: begin F=Data_A|Data_B; end
-       4'b0111: begin F=Data_A&Data_B; end
-       4'b1000: begin {CF,F}=Data_A-Data_B; end
-       4'b1101: begin F=$signed(Data_A)>>>Data_B; end
+	   4'b0000: begin {CF,F}=Data_A+ALU_B; end
+	   4'b0001: begin F=Data_A<<ALU_B; end
+       4'b0010: begin F=($signed(Data_A) < $signed(ALU_B))?1:0; end
+       4'b0011: begin F=Data_A<ALU_B?1:0; end
+       4'b0100: begin F=Data_A^ALU_B; end
+       4'b0101: begin F=Data_A>>ALU_B; end
+       4'b0110: begin F=Data_A|ALU_B; end
+       4'b0111: begin F=Data_A&ALU_B; end
+       4'b1000: begin {CF,F}=Data_A-ALU_B; end
+       4'b1101: begin F=$signed(Data_A)>>>ALU_B; end
 	endcase   
 	ZF = F==0;
     SF = F[31];
